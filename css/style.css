@@ -303,7 +303,7 @@ padding-left: 10px;
 }
 .social li i:hover{
   color:var(--mainTransition);
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   text-shadow: 2px 2px 3px var(--mainGrey);
 }
 
