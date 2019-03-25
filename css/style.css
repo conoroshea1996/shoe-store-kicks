@@ -154,6 +154,8 @@ h1{
 .btn-black {
   color: var(--mainBlack) !important;
   border-color: var(--mainBlack) !important;
+  border-radius: 1.5rem;
+  width: 6rem;
 }
 .btn-black:hover {
   color: var(--mainBlue) !important;
@@ -273,3 +275,36 @@ h1{
   right: 0;
   transform: translateX(60%);
 }
+
+/* fOOTER */
+section .section-title {
+  text-align: center;
+  color: #007b5e;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+.footer-title{
+  text-align: center;
+}
+#footer {
+  background: var(--mainBlack);
+}
+#footer h5{
+padding-left: 10px;
+  border-left: 3px solid #eeeeee;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color:#ffffff;
+}
+.social li i{
+  font-size:2rem;
+  color: var(--mainBlue);
+  transition: all 1s ease;
+}
+.social li i:hover{
+  color:var(--mainTransition);
+  transform: translateY(-5px);
+  text-shadow: 2px 2px 3px var(--mainGrey);
+}
+
+  
