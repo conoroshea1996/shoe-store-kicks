@@ -13,6 +13,9 @@ body {
   background: var(--mainBlack);
   color: var(--mainWhite);
 }
+i{
+  color: var(--mainBlue);
+}
 /* nav links */
 .logo{
   width: 100%;
@@ -121,18 +124,34 @@ h1{
 .cart {
   position: absolute;
   min-height: 10rem;
-  background: var(--mainWhite);
   top: 0;
   right: 0;
-  transition: all 0.3s ease-in-out;
-  background: rgba(255, 255, 255, 0.5);
+  transition: all 1s ease-in-out;
+  background: rgba(29, 28, 28, 0.5);
   width: 0;
   overflow: hidden;
+  opacity: 0;
+}
+@keyframes show-cart {
+  /* You could think of as "step 1" */
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  /* You could think of as "step 2" */
+  100% {
+    opacity: 1;
+  }
 }
 .show-cart {
   width: 18rem;
   padding: 2rem 1.5rem;
-  transform: rotateY(-360deg);
+  animation: show-cart 1s;
+  animation-fill-mode: forwards;
+  border-bottom: 0.25rem solid var(--mainBlue);
+  border-left: 0.14rem solid var(--mainBlue);
 }
 .cart-item {
   transition: all 2s ease-in-out;
@@ -153,15 +172,35 @@ h1{
 }
 /* cart item */
 /* cart buttons */
-.btn-pink {
-  color: var(--mainBlue) !important;
-  border-color: var(--mainPink) !important;
+
+.btn-cart{
+  color:rgba(250, 56, 56) !important;
+  border-color: var(--mainBlack) !important;
+  border-radius: 1.5rem;
 }
+.cart-buttons-container{
+  width:17rem;
+  margin: 0;
+  padding: 0;
+  transform: translateX(-1rem);
+}
+
+.btn-cart i {
+  color:  rgba(250, 56, 56, 0.705);
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  transition: all 0.8s ease-in-out;
+}
+.btn-cart:hover i{
+  color: rgb(255, 60, 0);
+  font-size: 1.3rem;
+}
+
 .btn-black {
   color: var(--mainBlack) !important;
   border-color: var(--mainBlack) !important;
   border-radius: 1.5rem;
-  width: 6rem;
+  width: 6.5rem;
 }
 .btn-black:hover {
   color: var(--mainBlue) !important;
@@ -170,6 +209,10 @@ h1{
 .btn-pink:hover {
   background: var(--mainPink) !important;
   color: var(--mainBlack) !important;
+}
+#item-img{
+  width: 4.5rem;
+  height: 4.5rem;
 }
 /* end of cart buttons */
 
