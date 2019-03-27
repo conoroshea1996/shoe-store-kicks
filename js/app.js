@@ -86,6 +86,15 @@
             document.querySelector('.item-total').textContent = totalMoney;
             document.getElementById('item-count').textContent = total.length;
 
+            const clearcart = document.getElementById('clear-cart')
+
+            clearcart.addEventListener('click', function(){
+                document.getElementById('item-count').textContent='No';
+                document.querySelector('.item-total').textContent ='0.00';
+                document.getElementById('cart-total').textContent = '0.00';
+            })
+
         }
+   
 
 })();
