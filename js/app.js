@@ -92,6 +92,7 @@
                 document.getElementById('item-count').textContent='No';
                 document.querySelector('.item-total').textContent ='0.00';
                 document.getElementById('cart-total').textContent = '0.00';
+                document.querySelector('.cart-item').remove();
             })
 
         }
