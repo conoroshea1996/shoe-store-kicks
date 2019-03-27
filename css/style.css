@@ -7,7 +7,6 @@
   --mainBlack: #000;
   --mainGrey: rgb(155, 154, 154);
 }
-
 body {
   font-family: "Kaushan Script", cursive;
   background: var(--mainBlack);
@@ -101,7 +100,7 @@ a:hover{
 .banner-title {
   color: var(--mainBlue);
   font-size: 5rem;
-  margin-left:1.3rem;
+  margin-left:0.4rem;
   text-shadow: 5px 0.5rem grey;
 }
 h1{
@@ -213,6 +212,7 @@ h1{
 #item-img{
   width: 4.5rem;
   height: 4.5rem;
+  border-radius: 50%;
 }
 /* end of cart buttons */
 
@@ -333,8 +333,10 @@ section .section-title {
   text-transform: uppercase;
 }
 .footer-title{
-  width: 100%;
+  width: 90%;
   text-align: center;
+  margin: 0;
+
 }
 #footer {
   background: var(--mainBlack);
